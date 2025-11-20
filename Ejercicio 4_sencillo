@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+ {
+    float capital;  // Variable para la cantidad invertida
+    float tasa;     // Variable para la tasa de interés mensual (en decimal, ej. 0.05 para 5%)
+    float monto_final;  // Variable para el monto final
+    
+    // Leer capital y tasa
+    printf("Ingresa la cantidad invertida (capital): ");
+    scanf("%f", &capital);
+    printf("Ingresa la tasa de interés mensual (en decimal, ej. 0.05): ");
+    scanf("%f", &tasa);
+    
+    // Calcular monto final (interés simple mensual)
+    monto_final = capital * (1 + tasa);
+    
+    // Imprimir resultado
+    printf("Monto final al finalizar el mes: %.2f\n", monto_final);
+    
+    return 0;
+}
