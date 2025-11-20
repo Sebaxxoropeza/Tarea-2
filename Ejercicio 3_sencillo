@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+ {
+    float dolares;  // Variable para la cantidad en dólares
+    float pesos;    // Variable para la cantidad en pesos
+    const float tasa = 11.96;  // Tasa de conversión fija
+    
+    // Leer la cantidad en dólares
+    printf("Ingresa la cantidad en dólares: ");
+    scanf("%f", &dolares);
+    
+    // Calcular conversión
+    pesos = dolares * tasa;
+    
+    // Imprimir resultado
+    printf("Equivalente en pesos: %.2f\n", pesos);
+    
+    return 0;
+}
