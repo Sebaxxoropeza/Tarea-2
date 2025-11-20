@@ -15,3 +15,7 @@ int main()
     
     // Imprimir resultados
     printf("Área: %.2f\n", area);
+   printf("Circunferencia: %.2f\n", circunferencia);
+    
+    return 0;
+}
