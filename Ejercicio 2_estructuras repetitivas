@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() 
+{
+   int num, cont_pos = 0, cont_neg = 0, cont_nul = 0, i;
+  
+   // Leer 100 números
+   for (i = 1; i <= 100; i++) {
+       printf("Ingresa el número %d: ", i);
+       scanf("%d", &num);
+      
+       if (num > 0) 
+{
+           cont_pos++;
+       } else if (num < 0) 
+{
+           cont_neg++;
+       } else
+ {
+           cont_nul++;
+       }
+   }
+  
+   // Imprimir conteos
+   printf("Positivos: %d\n", cont_pos);
+   printf("Negativos: %d\n", cont_neg);
+   printf("Nulos: %d\n", cont_nul);
+  
+   return 0;
+}
