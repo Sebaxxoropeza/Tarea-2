@@ -15,3 +15,8 @@ int main()
  {
        nuevo_sueldo = sueldo * 1.12;  // 12% aumento
    }
+   // Imprimir nuevo sueldo
+   printf("Nuevo sueldo: %.2f\n", nuevo_sueldo);
+  
+   return 0;
+}
