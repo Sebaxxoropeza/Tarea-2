@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>  // Para usar M_PI
+int main()
+ {
+    float radio;  // Variable para el radio
+    float area, circunferencia;  // Variables para los resultados
+    
+    // Leer el radio
+    printf("Ingresa el radio del círculo: ");
+    scanf("%f", &radio);
+    
+    // Calcular área y circunferencia
+    area = M_PI * radio * radio;
+    circunferencia = 2 * M_PI * radio;
+    
+    // Imprimir resultados
+    printf("Área: %.2f\n", area);
