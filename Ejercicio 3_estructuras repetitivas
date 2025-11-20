@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() 
+{
+   int suma = 0, i;
+  
+   // Sumar pares de 10 a 50
+   for (i = 10; i <= 50; i++) 
+  {
+      if (i % 2 == 0) 
+    {
+        suma += i;
+    }
+   }
+  
+   // Imprimir suma
+   printf("Suma de pares entre 10 y 50: %d\n", suma);
+  
+   return 0;
+}
