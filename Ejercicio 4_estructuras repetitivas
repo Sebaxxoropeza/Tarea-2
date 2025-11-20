@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() 
+{
+   int N, producto = 1, i;
+  
+   // Leer N
+   printf("Ingresa N: ");
+   scanf("%d", &N);
+  
+   // Calcular producto
+   for (i = 1; i <= N; i++) 
+  {
+       producto *= i;
+   }
+  
+   // Imprimir producto
+   printf("Producto de los primeros %d números naturales: %d\n", N, producto);
+  
+   return 0;
+}
+
