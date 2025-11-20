@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+   float sueldo, nuevo_sueldo;
+  
+   // Leer sueldo
+   printf("Ingresa el sueldo: ");
+   scanf("%f", &sueldo);
+  
+   // Calcular aumento
+   if (sueldo < 1000) 
+{
+       nuevo_sueldo = sueldo * 1.15;  // 15% aumento
+   } else
+ {
+       nuevo_sueldo = sueldo * 1.12;  // 12% aumento
+   }
