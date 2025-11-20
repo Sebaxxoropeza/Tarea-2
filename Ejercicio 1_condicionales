@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() 
+{
+   float monto, total;
+  
+   // Leer monto de la compra
+   printf("Ingresa el monto de la compra: ");
+   scanf("%f", &monto);
+  
+   // Aplicar descuento si es mayor a 2500
+   if (monto > 2500)
+ {
+       float descuento = monto * 0.08;
+       total = monto - descuento;
+   } else
+ {
+       total = monto;
+   }
+  
+   // Imprimir total a pagar
+   printf("Total a pagar: %.2f\n", total);
+  
+   return 0;
+}
